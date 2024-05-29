@@ -1,0 +1,182 @@
+/* This is universal  */
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+/* This is for home  */
+#home img{
+    display: block;
+    width: 100vw;
+}
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* This is for navigation bar  */
+.nav-item:not(:last-child) {
+    margin-right: 6px;
+}
+.navbar .nav-item .nav-link:hover{
+    text-decoration: underline;
+}
+.navbar .nav-item .nav-link:active{
+    font-weight: bolder;
+}
+
+/* This is for management */
+#management .main-heading{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+#management .main-para{
+    margin: 2rem;
+}
+#management .row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+#management .management-box{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    margin: 2px 6px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+#management .management-box img{
+    align-items: center;
+    display: block;
+    margin: auto;
+    width: 120px;
+    height: 120px;
+}
+#management .management-box h2{
+    font-size: 1.5rem;
+    margin: 1rem 1.5rem;
+}
+#management .management-box p{
+    margin: 1rem 1.5rem;
+}
+#management .management-box h3{
+    color:#388E3C;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1rem;
+    margin: 1rem 1.5rem;
+}
+#management .second-heading{
+    font-size: 3.5rem;
+    background-color: #d1f3d2;
+    margin: 6rem 2rem;
+    text-align: center;
+
+}
+#management .management-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#management .management-img{
+    background-color: black;
+    color: white;
+    margin: 2rem 0rem;
+    border-radius: 3rem;
+    padding: 1rem 1rem;
+    display: flex;
+}
+#management .management-img img{
+    width: 60px;
+    height: 60px;
+}
+#management .management-img .h4{
+    font-size: 1rem;
+    justify-items: center;
+}
+#management .management-img .h4 span{
+    font-size: 2rem;
+}
+
+
+/* This is for footer  */
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #388E3C;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer .social-link{
+    width: 24px;
+     height: 24px; 
+     margin: 5px;
+     transition: transform 0.3s ease;
+}
+footer .social-link:hover{
+    scale: 0.8;
+}
+
+/* This is for responsive  */
+@media (min-width:582px) and (max-width:780px) {
+    #management .row{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    #management .management-box{
+        width: 60%;
+        margin-top: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    #management .management-box:nth-child(3){
+        margin-top: 5rem;
+    }
+    
+    
+}
+@media (max-width:582px){
+    #management .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+    #management .management-box{
+        width: 60%;
+        margin-top: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    #management .second-heading{
+        font-size: 2rem;
+    }
+
+}

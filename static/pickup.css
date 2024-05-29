@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif, Helvetica; 
+    height: 100%;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    color: #2c3e50;
+    background-color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-top: 2px solid green;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+
+
+.overlay-text {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+
+    padding: 10px;
+}
+
+.overlay-heading {
+    margin: 0;
+    font-size: 2rem;
+}
+
+ul {
+    list-style: none;
+    /* Remove default bullet points */
+    padding: 0;
+}
+
+.unlist li {
+
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.unlist li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer {
+    background-color: #388E3C;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer .social-link{
+    width: 24px;
+     height: 24px; 
+     margin: 5px;
+     transition: transform 0.3s ease;
+}
+footer .social-link:hover{
+    scale: 0.8;
+}
+.bg-custom-green {
+    background-color: #28a745; /* Use any green color code you prefer */
+    color: white; /* Optional: set text color to white for better contrast */
+}
+.nav-item:not(:last-child) {
+margin-right: 6px; /* Adjust the spacing as needed */
+}
+.navbar .nav-item .nav-link:hover{
+    text-decoration: underline;
+}
+.navbar .nav-item .nav-link:active{
+    font-weight: bolder;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+} 
+
+
+/* This is for responsive  */
+@media (min-width:800px) and (max-width:1020px){
+    .row{
+        padding-top:3rem;
+    }
+}
+@media (max-width:800px){
+    .overlay-heading{
+        font-size: 1.3rem;
+    }
+    .row{
+        padding-top:3rem;
+    }
+    .w-50{
+        width: 70% !important;
+    }
+}

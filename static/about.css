@@ -1,0 +1,149 @@
+/* This is the universal  */
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* This is for navigation bar  */
+.nav-item:not(:last-child) {
+    margin-right: 6px;
+}.navbar .nav-item .nav-link:hover{
+    text-decoration: underline;
+}
+.navbar .nav-item .nav-link:active{
+    font-weight: bolder;
+}
+
+
+/* This is the home section  */
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #388E3C;
+    color:white;
+}
+#home .card{
+    background-color: #388E3C;
+}
+#home .card h2{
+    font-size: 5rem;
+    color: white;
+}
+#home .card h4{
+    color: white;
+}
+#home img{
+    height: 400px;
+    width: 400px;
+}
+
+/* This is scrapo section  */
+#scarpo h2{
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem 0rem;
+}
+#scarpo p{
+    margin: 0rem 2rem;
+}
+
+#scarpo .container{
+    display: flex;
+}
+#scarpo .container .box{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 3rem 1rem;
+}
+
+#scarpo .container .box h3{
+    text-align: center;
+    text-decoration: underline;
+    padding: 1rem 1rem;
+
+}
+
+#scarpo .box p{
+    padding-bottom: 2rem;
+}
+#scarpo .info h3{
+    margin:1rem 1rem;
+}
+#scarpo .info{
+    margin-bottom: 2rem;
+}
+/* This is for footer  */
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #388E3C;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer .social-link{
+    width: 24px;
+     height: 24px; 
+     margin: 5px;
+     transition: transform 0.3s ease;
+}
+footer .social-link:hover{
+    scale: 0.8;
+}
+
+
+/* This is for responsive  */
+@media (min-width:740px)and(max-width:850px){
+    #home{
+        flex-direction: column;
+    }
+    #home .card{
+        margin-top: 4rem;
+    }
+    #scarpo .container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:740px){
+    #home{
+        flex-direction: column;
+    }
+    #home .card{
+        margin-top: 4rem;
+    }
+    #scarpo .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,142 @@
+/* This is universal  */
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* This is for navigation bar  */
+.nav-item:not(:last-child) {
+    margin-right: 6px;
+}
+.navbar .nav-item .nav-link:hover{
+    text-decoration: underline;
+}
+.navbar .nav-item .nav-link:active{
+    font-weight: bolder;
+}
+
+
+/* This is for home section  */
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #388E3C;
+    color:white;
+}
+#home .home-card h2{
+    font-size: 3rem;
+}
+#home .home-card p{
+    font-weight: bold;
+}
+
+/* This is for scrap-rate section  */
+#scrap-rate .info h2{
+    text-align: center;
+    margin: 2rem 0rem;
+}
+#scrap-rate .info p{
+    margin: 0rem 2rem;
+}
+#scrap-rate .images{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    margin:2rem auto;
+    align-items: center;
+    justify-content: center;
+}
+#scrap-rate .images .img{
+    margin: 1rem 1rem;
+}
+#scrap-rate .images .para{
+    background-color: #388E3C;
+    width: 100%;
+    display: block;
+    color: white;
+    padding: 1rem 1rem;
+}
+
+/* This is for footer  */
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #388E3C;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer .social-link{
+    width: 24px;
+     height: 24px; 
+     margin: 5px;
+     transition: transform 0.3s ease;
+}
+footer .social-link:hover{
+    scale: 0.8;
+}
+
+
+/* This is for responsive  */
+@media (min-width:1000px) and (max-width:1215px){
+    #home{
+        flex-direction: column;
+    }
+    #home .home-card{
+        margin-top: 4rem;
+    }
+    #scrap-rate .images{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 45%;
+        margin:2rem auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width:1000px){
+    #home{
+        flex-direction: column;
+    }
+    #home .home-card{
+        margin-top: 4rem;
+    }
+    #scrap-rate .images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #scrap-rate .images .img-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
